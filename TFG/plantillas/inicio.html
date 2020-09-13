@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>TFG</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script>
+           const selectFoto = () =>{
+               
+               let input = document.querySelector(".inputFile");
+               input.click();
+               input.onchange = e =>{
+                   console.log(e);
+               }
+           }
+        </script>
+    </head>
+    <body>
+        <div style="margin-left: 10%;">
+            <div style="margin-left:10%;">
+                <h1>Proyecto de fin de grado by Jaime Cuéllar</h1>
+            </div>
+            <div style="margin-top: 10%;">
+                <button onclick="selectFoto()" type="button" class="btn btn-info" style="margin-left:10%; margin-right: 30%;">Hacer prediccion</button>
+                <input class="inputFile" type="file" style="display: none;">
+                <a href="/predicciones/">Ver predicciones</a>
+            </div>
+        </div>
+    </body>
+</html>
